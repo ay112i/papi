@@ -9,7 +9,7 @@ app.use(express.json());
 
 require('dotenv').config(); // only needed if using .env locally
 // const db = mysql.createConnection(process.env.DATABASE_URL);
-const db = mysql.createConnection(process.env.MYSQL_URL);
+const db = mysql.createConnection(process.env.MYSQL_PUBLIC_URL);
 
 // const db = mysql.createConnection({
 //   host: 'localhost',
